@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100% !important;
+}
+
+.page {
+  background: #fafafa;
+  color: #3c3b3b;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__header {
+  text-align: center;
+}
+
+.header__title {
+  font-size: 2rem;
+  padding: 0 20px;
+}
+
+.page__main {
+  flex-flow: row wrap;
+}
+
+.main__card {
+  /*calc: (100% / 3 blocos = 33% ) - 20 (10px de cada margem entre os itens ficam 20px) */
+  width: calc(33% - 20px);
+  min-width: 285px;
+  min-height: 250px;
+  margin: 10px;
+  padding: 4px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  flex-direction: column;
+  transition: 0.4s ease-in-out;
+}
+
+.main__card:hover {
+  border: 8px solid;
+}
+
+.main__card--html:hover {
+  border-color: #d95231;
+  color: #d95231;
+}
+
+.main__card--css:hover {
+  border-color: #309ed8;
+  color: #309ed8;
+}
+
+.main__card--js:hover {
+  border-color: #d9a62f;
+  color: #d9a62f;
+}
+
+.card__icon i {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  padding: 4px;
+}
