@@ -7,16 +7,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
-html,
-body {
-  width: 100%;
-  min-height: 100% !important;
-}
-
 .page {
   background: #fafafa;
   color: #3c3b3b;
   font-size: 16px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
@@ -36,6 +32,7 @@ body {
 .header__title {
   font-size: 2rem;
   padding: 0 20px;
+  color: #6971f4;
 }
 
 .page__main {
@@ -49,7 +46,7 @@ body {
   min-height: 250px;
   margin: 10px;
   padding: 4px;
-  border: 1px solid #eee;
+  border: 1px solid #3c3b3b;
   border-radius: 8px;
   flex-direction: column;
   transition: 0.4s ease-in-out;
@@ -81,4 +78,8 @@ body {
 
 .card__text {
   padding: 4px;
+}
+
+footer .footer__icon {
+  color: #6971f4;
 }
